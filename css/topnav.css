@@ -1,0 +1,76 @@
+.topnav {
+    background: #333;
+    height: 40px;
+    color: #b0b0b0;
+    font-size: 12px;
+}
+
+.topnav-menu {
+    line-height: 40px;
+}
+
+.topnav-menu a {
+    padding: 7px;
+    border-right: 1px solid #424242;
+}
+
+.topnav-menu li:last-child a{
+    border-right: none;
+}
+
+.topnav-menu li:first-child a {
+    padding-left: 0;
+}
+
+.topnav-menu li a:hover {
+    color: #fff;
+}
+
+
+/* 购物车 */
+.topnav-car {
+    position: relative;
+    width: 120px;
+    height: 40px;
+    background: #424242;
+    margin-left: 13px;
+}
+
+.topnav-car .topnav-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 40px;
+}
+
+.topnav-link .iconfont {
+    margin-right: 3px;
+}
+
+.topnav-car .topnav-detail {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 320px;
+    height: 100px;
+    background: #fff;
+    text-align: center;
+    line-height: 100px;
+    border: 1px solid #ccc;
+    border-top: none;
+    display: none;
+    z-index: 99;
+    /*  弹出菜单两位数 
+        固定菜单三位数
+    */
+}
+
+.topnav-car:hover .topnav-detail {
+    display: block;
+}
+
+.topnav-car:hover .topnav-link {
+    background: #fff;
+    color: #ff6700;
+}
